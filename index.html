@@ -387,6 +387,51 @@
         margin-bottom: 0.3rem;
       }
     }
+
+    .schedule-date {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .schedule-date-text {
+      font-size: 1.8rem;
+      font-family: "Noto Serif JP", serif;
+      color: var(--accent);
+      margin: 0;
+      padding: 1rem 0;
+      border-top: 2px solid var(--border);
+      border-bottom: 2px solid var(--border);
+    }
+    @media screen and (max-width: 768px) {
+      .schedule-date-text {
+        font-size: 1.4rem;
+      }
+    }
+
+    .rsvp-info {
+      text-align: center;
+      margin-bottom: 2rem;
+      background: rgba(255, 107, 107, 0.1);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    .rsvp-date {
+      font-size: 1.5rem;
+      font-family: "Noto Serif JP", serif;
+      color: var(--accent);
+      margin: 0 0 1rem 0;
+    }
+    .rsvp-deadline {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    @media screen and (max-width: 768px) {
+      .rsvp-date {
+        font-size: 1.3rem;
+      }
+      .rsvp-deadline {
+        font-size: 1.1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -423,6 +468,9 @@
 
   <section class="schedule">
     <h2>当日のスケジュール</h2>
+    <div class="schedule-date">
+      <p class="schedule-date-text">2025年10月25日（土）</p>
+    </div>
     <ul>
       <li>11:30 受付開始</li>
       <li>12:30 挙式</li>
@@ -457,8 +505,11 @@
   </section>
 
   <section id="rsvp">
-    <h2>RSVP</h2>
-    <p>下記フォームより <strong>2025年8月24日</strong> までにご出欠をお知らせください。</p>
+    <h2>ご出欠のご返信</h2>
+    <div class="rsvp-info">
+      <p class="rsvp-date">2025年10月25日（土）挙式・披露宴</p>
+      <p class="rsvp-deadline">下記フォームより <strong>2025年8月24日</strong> までにご返信をお願いいたします。</p>
+    </div>
     <form id="rsvpForm" class="rsvp-form">
       <div class="form-group">
         <label for="name">お名前 <span class="required">*</span></label>
